@@ -1,6 +1,8 @@
 'use strict';
 
-const should = require('should');
+/* eslint no-unused-expressions: 0 */
+
+const should = require('should'); // eslint-disable-line no-unused-vars
 const socketEventTypes = require('../lib/socketEvents/constants.js');
 const eventTopics = require('../lib/eventTopics.js');
 
@@ -11,7 +13,6 @@ describe('Constants', function() {
         socketEventTypes[i].should.be.a.String;
       }
     }
-
     done();
   });
 
@@ -27,7 +28,6 @@ describe('Constants', function() {
         }
       }
     }
-
     done();
   });
 });

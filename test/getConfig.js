@@ -1,6 +1,8 @@
 'use strict';
 
-const should = require('should');
+/* eslint no-unused-expressions: 0 */
+
+const should = require('should'); // eslint-disable-line no-unused-vars
 const getConfig = require('../lib/getConfig');
 
 describe('Config loading', function() {
@@ -8,7 +10,6 @@ describe('Config loading', function() {
     getConfig(function(err, options) {
       options.should.be.ok;
       options.should.be.a.Object;
-
       done();
     });
   });

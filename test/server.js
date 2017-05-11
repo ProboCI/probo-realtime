@@ -1,6 +1,8 @@
 'use strict';
 
-const should = require('should');
+/* eslint no-unused-expressions: 0 */
+
+const should = require('should'); // eslint-disable-line no-unused-vars
 const bunyan = require('bunyan');
 const Server = require('../lib/server');
 const getConfig = require('../lib/getConfig');
