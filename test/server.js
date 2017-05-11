@@ -2,7 +2,7 @@
 
 const should = require('should');
 const bunyan = require('bunyan');
-const Server = require('../lib/Server');
+const Server = require('../lib/server');
 const getConfig = require('../lib/getConfig');
 
 describe('Server', function() {

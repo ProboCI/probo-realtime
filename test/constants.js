@@ -2,7 +2,7 @@
 
 const should = require('should');
 const socketEventTypes = require('../lib/socketEvents/constants.js');
-const eventTopics = require('../lib/eventTopics/constants.js');
+const eventTopics = require('../lib/eventTopics.js');
 
 describe('Constants', function() {
   it('should have socket type constants, where each is a string', function(done) {
