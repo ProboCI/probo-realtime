@@ -1,19 +1,25 @@
 {
   "name": "probo-realtime",
   "version": "0.0.1",
-  "description": "",
+  "description": "Publish Kafka events over websockets",
   "main": "index.js",
   "scripts": {
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
-    "lint": "./node_modules/.bin/eslint .",
-    "lint:fix": "./node_modules/.bin/eslint --fix .",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "start": "./bin/probo-realtime",
     "start:dev": "NODE_ENV=development DEBUG=* ./node_modules/.bin/nodemon bin/probo-realtime | ./node_modules/.bin/bunyan",
-    "test": "./node_modules/.bin/mocha --recursive --require should",
-    "test:watch": "./node_modules/.bin/mocha -w --recursive --require should"
+    "test": "mocha --recursive --require should",
+    "test:watch": "mocha -w --recursive --require should"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Probo.CI <info@probo.ci> (https://probo.ci)",
+  "contributors": [
+    "Howard Tyson <howard@howardtyson.com> (http://howardtyson.com)",
+    "Ilya Braude <ilya@ilyabraude.com> (http://www.ilyabraude.com/)",
+    "Laurence Liss <laurence@probo.ci> (https://www.laurenceliss.com)",
+    "James Cole <mail@ofjamescole.com> (https://ofjamescole.com)"
+  ],
+  "license": "UNLICENSED",
   "dependencies": {
     "bluebird": "^3.4.7",
     "bunyan": "^1.8.5",
@@ -36,5 +42,21 @@
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
     "should": "^11.1.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProboCI/probo-realtime.git"
+  },
+  "keywords": [
+    "probo",
+    "kafka",
+    "websockets"
+  ],
+  "bugs": {
+    "url": "https://github.com/ProboCI/probo-realtime/issues"
+  },
+  "homepage": "https://github.com/ProboCI/probo-realtime#readme"
 }
