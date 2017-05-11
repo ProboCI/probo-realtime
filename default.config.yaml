@@ -1,0 +1,11 @@
+host: localhost
+port: 8085
+
+eventStreams:
+  build_events:
+    plugin: Kafka
+    config:
+      topic: build_events
+      group: realtime
+      streamOptions:
+        highWaterMark: 20000

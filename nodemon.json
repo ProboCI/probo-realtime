@@ -1,0 +1,11 @@
+{
+  "restartable": "rs",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ignore": [
+    ".git",
+    "node_modules"
+  ],
+  "verbose": false
+}

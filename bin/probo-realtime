@@ -1,0 +1,16 @@
+#! /usr/bin/env node
+
+'use strict';
+
+const getConfig = require('../lib/getConfig');
+const Server = require('../lib/server');
+
+getConfig(function(error, options) {
+  if (error) {
+    options.logger.error({error}, error.message);
+    throw error;
+  }
+
+  const app = new Server(options);
+  app.start();
+});

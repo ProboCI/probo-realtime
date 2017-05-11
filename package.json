@@ -1,0 +1,40 @@
+{
+  "name": "probo-realtime",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "lint": "./node_modules/.bin/eslint .",
+    "lint:fix": "./node_modules/.bin/eslint --fix .",
+    "start": "./bin/probo-realtime",
+    "start:dev": "NODE_ENV=development DEBUG=* ./node_modules/.bin/nodemon bin/probo-realtime | ./node_modules/.bin/bunyan",
+    "test": "./node_modules/.bin/mocha --recursive --require should",
+    "test:watch": "./node_modules/.bin/mocha -w --recursive --require should"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "bunyan": "^1.8.5",
+    "express": "^4.14.0",
+    "lodash.includes": "^4.3.0",
+    "probo-eventbus": "^0.2.0",
+    "probo-request-logger": "^1.0.0",
+    "restify": "^4.3.0",
+    "socket.io": "^1.7.2",
+    "through2": "^2.0.3",
+    "uuid": "^3.0.1",
+    "yaml-config-loader": "^2.0.1",
+    "yargs": "^6.5.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.15",
+    "eslint": "^3.12.2",
+    "eslint-config-probo": "^2.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "should": "^11.1.2"
+  }
+}
